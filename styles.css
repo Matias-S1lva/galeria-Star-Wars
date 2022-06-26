@@ -197,3 +197,9 @@ text-align: center;
 font-size: 25px;
 color: #1da1f2;
 }
+@media only screen and (max-width:900px) {
+  .grid .item {
+   
+    width: calc(48.888888% - 20px);
+  }
+}
