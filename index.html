@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/84266bc184.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria Imagenes - Star Wars</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <header>
+        <div class="logo">
+          <h1>STAR WARS</h1>
+          <p>" hace mucho tiempo, en una galaxia muy muy lejana..."</p>
+        </div>
+        <form action="">
+          <input
+            type="text"
+            class="barra-busqueda"
+            id="barra-busqueda"
+            placeholder="buscar"
+          />
+        </form>
+        <div class="categorias" id="categorias">
+          <a href="#" class="activo">Todos</a>
+          <a href="#">Jedi</a>
+          <a href="#">Sith</a>
+          <a href="#">Droides</a>
+          <a href="#">Planetas</a>
+        </div>
+      </header>
+      <section class="grid" id="grid">
+        <div
+          class="item"
+          data-categoria="jedi"
+          data-etiquetas="jedi anakin skywalker "
+          data-descripcion="1.- Anakin Skywalker. "
+        >
+          <div class="item-contenido">
+            <img src="img/anakin.webp" alt="" />
+          </div>
+        </div>
+        <div
+          class="item"
+          data-categoria="sith"
+          data-etiquetas="sith darth vader oscuro"
+          data-descripcion="2.- Darth Vader. "
+        >
+          <div class="item-contenido">
+            <img src="img/vader.webp" alt="" />
+          </div>
+        </div>
+        <div
+          class="item"
+          data-categoria="sith"
+          data-etiquetas="sith moul darth oscuro"
+          data-descripcion="3.- Darth Moul. "
+        >
+          <div class="item-contenido">
+            <img src="img/maul.webp" alt="" />
+          </div>
+        </div>
+        <div
+          class="item"
+          data-categoria="jedi"
+          data-etiquetas="jedi obiwan kenobi maestro "
+          data-descripcion="4.- sit aut perspiciatis maiores molestiae, enim sed consequatur. "
+        >
+          <div class="item-contenido">
+            <img src="img/obiwan.jpg" alt="" />
+          </div>
+        </div>
+        <div
+          class="item"
+          data-categoria="droides"
+          data-etiquetas="droides r2d2  "
+          data-descripcion="5.- r2d2. "
+        >
+          <div class="item-contenido">
+            <img src="img/r2d2.webp" alt="" />
+          </div>
+        </div>
+        <div
+          class="item"
+          data-categoria="droides"
+          data-etiquetas="droides c3po "
+          data-descripcion="6.- sit aut perspiciatis maiores molestiae, enim sed consequatur. "
+        >
+          <div class="item-contenido">
+            <img src="img/c3po.webp" alt="" />
+          </div>
+        </div>
+        <div
+          class="item"
+          data-categoria="jedi"
+          data-etiquetas="jedi luke skywalker "
+          data-descripcion="7.- Luke Skywalker. "
+        >
+          <div class="item-contenido">
+            <img src="img/quigon.jpg" alt="" />
+          </div>
+        </div>
+        <div
+          class="item"
+          data-categoria="planetas"
+          data-etiquetas="planetas coruscant templo jedi "
+          data-descripcion="8.- sit aut perspiciatis maiores molestiae, enim sed consequatur. "
+        >
+          <div class="item-contenido">
+            <img src="img/coruscant.jpg" alt="" />
+          </div>
+        </div>
+        <div
+          class="item"
+          data-categoria="planetas"
+          data-etiquetas="planetas mustafa paisaje "
+          data-descripcion="9.- sit aut perspiciatis maiores molestiae, enim sed consequatur. "
+        >
+          <div class="item-contenido">
+            <img src="img/mustafa.webp" alt="" />
+          </div>
+        </div>
+        <div
+          class="item"
+          data-categoria="jedi"
+          data-etiquetas="jedi maestro yoda "
+          data-descripcion="9.- Yoda. "
+        >
+          <div class="item-contenido">
+            <img src="img/yoda.jpg" alt="" />
+          </div>
+        </div>
+        <div
+        class="item"
+        data-categoria="sith"
+        data-etiquetas="sith lord palpatine emperador "
+        data-descripcion="9.- emperador palpatine. "
+      >
+        <div class="item-contenido">
+          <img src="img/palpatine.webp" alt="" />
+        </div>
+      </div>
+      <div
+      class="item"
+      data-categoria="planetas"
+      data-etiquetas="planetas tatooine paisaje "
+      data-descripcion="9.- tatooine. "
+    >
+      <div class="item-contenido">
+        <img src="img/tatooine.webp" alt="" />
+      </div>
+    </div>
+      </section>
+
+      <section class="overlay" id="overlay">
+        <div class="contenedor-img">
+          <button id="btn-cerrar-popup">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <img src="" alt="" />
+        </div>
+        <p class="descripcion"></p>
+      </section>
+      <footer class="contenedor">
+        <div class="redes-sociales">
+          <div class="contenedor-icono">
+            <a
+              href="https://twitter.com/MatiasLeandroo7"
+              target="_blank"
+              class="twitter"
+            >
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </div>
+          <div class="contenedor-icono">
+            <a
+              href="https://www.instagram.com/matias_leandroo/?hl=es-la"
+              target="_blank"
+              class="instagram"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+          <div class="contenedor-icono">
+            <a
+              href="https://www.linkedin.com/in/matias-silva-9a66a0218"
+              target="_blank"
+              class="linkedin"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+        <div class="creado-por">Creado por: Matias silva</div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
