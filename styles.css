@@ -5,9 +5,8 @@
 }
 body {
   background-image: url("img/fondo.webp");
-  font-family: 'League Gothic', sans-serif;
+  font-family: "League Gothic", sans-serif;
   /* font-family: "Open Sans", sans-serif; */
-  
 }
 
 a {
@@ -29,12 +28,10 @@ header .logo {
   margin-bottom: 40px;
 }
 
-
-h1{
+h1 {
   font-size: 100px;
   -webkit-text-stroke: 2px yellow;
-  color: transparent; 
-  
+  color: transparent;
 }
 header .logo p {
   color: #1da1f2;
@@ -95,8 +92,6 @@ header .categorias a.activo {
 }
 .grid .item-contenido {
   position: relative;
-  
-  
 }
 .grid .item img {
   width: 100%;
@@ -128,7 +123,6 @@ header .categorias a.activo {
   max-width: 100%;
   height: 300px;
   border-radius: 10px;
-  
 }
 .overlay .descripcion {
   display: block;
@@ -140,66 +134,76 @@ header .categorias a.activo {
   border-radius: 10px;
   max-width: 50%;
 }
-.contenedor-img{
-    position: relative;
+.contenedor-img {
+  position: relative;
 }
 
-.overlay #btn-cerrar-popup{
-    background: none;
-    font-size: 20px;
-    color: #fff;
-    cursor: pointer;
-    border:none;
-    position: absolute;
-    right: -20px;
-    top: -20px;
+.overlay #btn-cerrar-popup {
+  background: none;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  right: -20px;
+  top: -20px;
 }
-footer .redes-sociales{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    flex-wrap: wrap;
+footer .redes-sociales {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  flex-wrap: wrap;
 }
-footer .redes-sociales a{
-    display: block;
-    width: 60px;
-    height: 60px;
-    background:#000;
-    margin: 20px;
-    text-align: center;
-    border-radius: 100px;
-    transition: .3s ease all;
-    color: #f3f3f3;
+footer .redes-sociales a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: #000;
+  margin: 20px;
+  text-align: center;
+  border-radius: 100px;
+  transition: 0.3s ease all;
+  color: #f3f3f3;
 }
-footer .redes-sociales .twitter{background: #1da1f2;}
-footer .redes-sociales .instagram{background: #c13584;}
-footer .redes-sociales .linkedin{background: #3b5998;}
+footer .redes-sociales .twitter {
+  background: #1da1f2;
+}
+footer .redes-sociales .github {
+  background: #fa5c00;
+}
+footer .redes-sociales .linkedin {
+  background: #3b5998;
+}
 
 footer .redes-sociales a i {
-    font-size: 20px;
-    line-height: 60px;
+  font-size: 30px;
+  line-height: 60px;
 }
 footer .contenedor-icono:hover a {
-    animation: icono .5s ease;
+  animation: icono 0.5s ease;
 }
-@keyframes icono{
-    from{
-        transform: rotate3d(0,0,0,0);
-    }
-    to{
-        transform: rotate3d(0,1,0,360deg);
-    }
+@keyframes icono {
+  from {
+    transform: rotate3d(0, 0, 0, 0);
+  }
+  to {
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
 }
 footer .creado-por{
-margin-bottom: 40px;
-text-align: center;
-font-size: 25px;
-color: #1da1f2;
+  margin-bottom: 40px;
+  text-align: center;
 }
-@media only screen and (max-width:900px) {
+footer .creado-por h2 {
+  display: inline-block;
+  background-color: #000;
+  
+  font-size: 40px;
+  color: #1da1f2;
+}
+@media only screen and (max-width: 900px) {
   .grid .item {
-   
     width: calc(48.888888% - 20px);
   }
 }
