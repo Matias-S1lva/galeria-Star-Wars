@@ -99,6 +99,7 @@ header .categorias a.activo {
   vertical-align: top;
   height: 250px;
   border-radius: 10px;
+  object-fit:cover;
 }
 
 .overlay {
